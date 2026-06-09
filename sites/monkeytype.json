@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "match": ["*://monkeytype.com/*"],
+  "rules": [
+    {
+      "selector": ":root",
+      "important": true,
+      "set": {
+        "--bg-color": "var(--tt-base)",
+        "--main-color": "var(--tt-c4)",
+        "--caret-color": "var(--tt-c4)",
+        "--sub-color": "var(--tt-muted)",
+        "--sub-alt-color": "var(--tt-low)",
+        "--text-color": "var(--tt-standard)",
+        "--error-color": "var(--tt-error)",
+        "--error-extra-color": "color-mix(in srgb, var(--tt-error) 70%, var(--tt-standard) 30%)",
+        "--colorful-error-color": "var(--tt-error)",
+        "--colorful-error-extra-color": "color-mix(in srgb, var(--tt-error) 70%, var(--tt-standard) 30%)",
+        "--text-color-dark": "color-mix(in srgb, var(--tt-standard) 40%, var(--tt-base) 60%)"
+      }
+    },
+    {
+      "selector": "#words",
+      "set": { "color": "var(--tt-standard)", "background-color": "transparent" }
+    },
+    {
+      "selector": "#words .word letter.correct",
+      "set": { "color": "var(--tt-standard)" }
+    },
+    {
+      "selector": "#words .word letter.incorrect",
+      "set": { "color": "var(--tt-error)" }
+    },
+    {
+      "selector": "#words .word letter.extraLetter",
+      "set": { "color": "var(--tt-error)" }
+    },
+    {
+      "selector": "#words .word letter.missingLetter",
+      "set": { "color": "color-mix(in srgb, var(--tt-error) 50%, transparent)" }
+    },
+    {
+      "selector": ".key",
+      "set": { "color": "var(--tt-muted)", "background-color": "var(--tt-low)" }
+    },
+    {
+      "selector": ".key.correct",
+      "set": {
+        "color": "var(--tt-standard)",
+        "background-color": "color-mix(in srgb, var(--tt-c4) 15%, var(--tt-low) 85%)"
+      }
+    },
+    {
+      "selector": ".key.incorrect",
+      "set": { "color": "var(--tt-on-error)", "background-color": "var(--tt-error)" }
+    }
+  ]
+}

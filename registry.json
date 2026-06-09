@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "updated": "2026-06-09T00:00:00Z",
+  "sites": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "matches": ["*://chatgpt.com/*"],
+      "path": "sites/chatgpt.json"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "matches": ["*://github.com/*"],
+      "path": "sites/github.json"
+    },
+    {
+      "id": "monkeytype",
+      "name": "Monkeytype",
+      "matches": ["*://monkeytype.com/*"],
+      "path": "sites/monkeytype.json"
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "matches": ["*://www.reddit.com/*"],
+      "path": "sites/reddit.json"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "matches": ["*://www.youtube.com/*", "*://youtube.com/*"],
+      "path": "sites/youtube.json"
+    }
+  ]
+}

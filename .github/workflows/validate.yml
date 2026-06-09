@@ -1,0 +1,35 @@
+name: Validate site configs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON files
+        run: |
+          for f in registry.json sites/*.json; do
+            echo "Validating $f..."
+            if ! python3 -c "
+import json, sys
+with open('$f') as fh:
+    data = json.load(fh)
+if '$f' == 'registry.json':
+    assert 'version' in data, 'missing version'
+    assert 'sites' in data, 'missing sites'
+    for s in data['sites']:
+        assert 'id' in s and 'name' in s and 'matches' in s and 'path' in s
+        assert isinstance(s['matches'], list), f'{s[\"id\"]}: matches must be array'
+elif '$f' != 'registry.json':
+    assert 'version' in data, 'missing version'
+    assert 'rules' in data, 'missing rules'
+print('  OK')
+"; then
+              exit 1
+            fi
+          done

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-16T14:00:00Z",
+  "updated": "2026-06-16T16:00:00Z",
   "sites": [
     {
       "id": "chatgpt",
@@ -49,6 +49,19 @@
       "name": "MDN Web Docs",
       "matches": ["*://developer.mozilla.org/*"],
       "path": "sites/mdn.json"
+    },
+    {
+      "id": "stackoverflow",
+      "name": "Stack Overflow",
+      "matches": [
+        "*://stackoverflow.com/*",
+        "*://*.stackoverflow.com/*",
+        "*://*.stackexchange.com/*",
+        "*://serverfault.com/*",
+        "*://superuser.com/*",
+        "*://askubuntu.com/*"
+      ],
+      "path": "sites/stackoverflow.json"
     }
   ]
 }

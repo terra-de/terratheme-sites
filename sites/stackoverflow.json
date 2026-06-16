@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "match": [
+    "*://stackoverflow.com/*",
+    "*://*.stackoverflow.com/*",
+    "*://*.stackexchange.com/*",
+    "*://serverfault.com/*",
+    "*://superuser.com/*",
+    "*://askubuntu.com/*"
+  ],
+  "rules": [
+    {
+      "selector": ":root",
+      "set": {
+        "--black-050": "var(--tt-base)",
+        "--black-100": "var(--tt-low)",
+        "--black-150": "color-mix(in srgb, var(--tt-low) 85%, var(--tt-base))",
+        "--black-200": "color-mix(in srgb, var(--tt-low) 60%, var(--tt-base))",
+        "--black-225": "color-mix(in srgb, var(--tt-high) 70%, var(--tt-base))",
+        "--black-250": "color-mix(in srgb, var(--tt-high) 60%, var(--tt-base))",
+        "--black-300": "color-mix(in srgb, var(--tt-high) 30%, var(--tt-base))",
+        "--black-350": "var(--tt-muted)",
+        "--black-400": "var(--tt-muted)",
+        "--black-500": "var(--tt-standard)",
+        "--black-600": "var(--tt-standard)",
+        "--black": "var(--tt-standard)",
+        "--white": "var(--tt-base)",
+
+        "--theme-primary": "var(--tt-c4)",
+        "--theme-primary-100": "color-mix(in srgb, var(--tt-c4) 12%, transparent)",
+        "--theme-primary-200": "color-mix(in srgb, var(--tt-c4) 20%, transparent)",
+        "--theme-primary-300": "color-mix(in srgb, var(--tt-c4) 35%, transparent)",
+        "--theme-primary-400": "var(--tt-c4)",
+        "--theme-primary-500": "color-mix(in srgb, var(--tt-c4) 70%, var(--tt-base))",
+        "--theme-primary-600": "color-mix(in srgb, var(--tt-c4) 50%, var(--tt-base))",
+
+        "--theme-secondary": "var(--tt-c2)",
+        "--theme-secondary-100": "color-mix(in srgb, var(--tt-c2) 12%, transparent)",
+        "--theme-secondary-200": "color-mix(in srgb, var(--tt-c2) 20%, transparent)",
+        "--theme-secondary-300": "color-mix(in srgb, var(--tt-c2) 35%, transparent)",
+        "--theme-secondary-400": "var(--tt-c2)",
+        "--theme-secondary-500": "color-mix(in srgb, var(--tt-c2) 70%, var(--tt-base))",
+        "--theme-secondary-600": "color-mix(in srgb, var(--tt-c2) 50%, var(--tt-base))",
+
+        "--theme-link-color": "var(--tt-c4)",
+        "--theme-link-color-hover": "color-mix(in srgb, var(--tt-c4) 70%, var(--tt-standard))",
+        "--theme-link-color-visited": "color-mix(in srgb, var(--tt-c4) 60%, var(--tt-muted))",
+
+        "--theme-post-title-color": "var(--tt-standard)",
+        "--theme-post-title-color-hover": "color-mix(in srgb, var(--tt-c4) 80%, var(--tt-standard))",
+        "--theme-post-title-color-visited": "color-mix(in srgb, var(--tt-c4) 60%, var(--tt-muted))",
+
+        "--theme-body-font-color": "var(--tt-standard)",
+
+        "--red-400": "var(--tt-error)",
+        "--red-500": "color-mix(in srgb, var(--tt-error) 70%, var(--tt-base))",
+        "--green-400": "var(--tt-c2)",
+        "--green-500": "color-mix(in srgb, var(--tt-c2) 70%, var(--tt-base))",
+
+        "--theme-content-background-color": "var(--tt-base)",
+        "--theme-header-background-color": "var(--tt-bottom)",
+        "--theme-topbar-background-color": "var(--tt-bottom)",
+        "--theme-footer-background-color": "var(--tt-bottom)",
+        "--theme-footer-text-color": "var(--tt-muted)",
+        "--theme-footer-link-color": "var(--tt-standard)",
+        "--theme-footer-title-color": "var(--tt-standard)",
+        "--theme-footer-divider-color": "var(--tt-outline)",
+
+        "--fc-dark": "var(--tt-standard)",
+        "--fc-medium": "var(--tt-muted)",
+        "--fc-light": "var(--tt-standard)",
+        "--fc-black-400": "var(--tt-muted)",
+        "--fc-black-500": "var(--tt-standard)",
+        "--fc-black-600": "var(--tt-standard)",
+
+        "--bc-lightest": "color-mix(in srgb, var(--tt-low) 50%, transparent)",
+        "--bc-lighter": "color-mix(in srgb, var(--tt-low) 70%, transparent)",
+        "--bc-light": "var(--tt-outline-variant)",
+        "--bc-medium": "var(--tt-outline)",
+        "--bc-dark": "color-mix(in srgb, var(--tt-outline) 60%, var(--tt-base))",
+        "--bc-darker": "color-mix(in srgb, var(--tt-outline) 50%, var(--tt-base))",
+
+        "--focus-ring": "color-mix(in srgb, var(--tt-c4) 40%, transparent)",
+        "--focus-neutral": "color-mix(in srgb, var(--tt-muted) 30%, transparent)"
+      }
+    }
+  ]
+}

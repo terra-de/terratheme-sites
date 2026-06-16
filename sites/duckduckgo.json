@@ -4,12 +4,12 @@
   "api": {
     "type": "ddg",
     "set": {
-      "k7": "var(--tt-low)",
+      "k7": "var(--tt-base)",
       "kj": "var(--tt-low)",
       "k9": "var(--tt-standard)",
       "k8": "var(--tt-muted)",
       "kx": "var(--tt-c4)",
-      "kaa": "color-mix(in srgb, var(--tt-c4) 60%, var(--tt-muted))",
+      "kaa": "color-mix(in srgb, var(--tt-c4) 60%, var(--tt-standard))",
       "k21": "color-mix(in srgb, var(--tt-standard) 8%, transparent)"
     }
   }

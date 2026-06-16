@@ -301,6 +301,7 @@ def format_friendly_output(analysis: dict[str, Any]) -> str:
     lines.append(f"URL: {analysis['url']}")
     lines.append(f"Match: {analysis['match_pattern']}")
     lines.append(f"Variables found: {analysis['total_variables']}")
+    lines.append(f"Color variables (template): {analysis.get('color_variables_count', 0)} / {analysis['total_variables']} total")
     lines.append("")
 
     lines.append("Suggested registry entry:")
@@ -362,6 +363,7 @@ def analyze_site(url: str) -> dict[str, Any]:
 
     result["variables"] = raw
     result["total_variables"] = len(raw)
+    result["color_variables_count"] = sum(1 for v in raw.values() if is_color_value(v))
     result["categorized"] = categorize_variables(raw)
     result["template"] = build_site_config_template(raw, url)
     result["tt_reference"] = generate_tt_reference()

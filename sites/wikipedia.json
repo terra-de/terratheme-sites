@@ -7,8 +7,8 @@
       "important": true,
       "set": {
         "--background-color-base": "var(--tt-base)",
-        "--background-color-neutral": "var(--tt-low)",
-        "--background-color-neutral-subtle": "var(--tt-low)",
+        "--background-color-neutral": "var(--tt-high)",
+        "--background-color-neutral-subtle": "var(--tt-high)",
         "--background-color-interactive": "var(--tt-low)",
         "--background-color-interactive--hover": "var(--tt-base)",
         "--background-color-interactive--active": "var(--tt-high)",

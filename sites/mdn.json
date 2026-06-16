@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "match": ["*://developer.mozilla.org/*"],
+  "rules": [
+    {
+      "selector": ":root",
+      "important": true,
+      "set": {
+        "--color-background-page": "var(--tt-base)",
+        "--color-background-primary": "var(--tt-low)",
+        "--color-background-secondary": "var(--tt-high)",
+        "--color-area-background": "color-mix(in srgb, var(--tt-c4) 12%, transparent)",
+
+        "--color-background-blue": "color-mix(in srgb, var(--tt-c4) 12%, transparent)",
+        "--color-background-red": "color-mix(in srgb, var(--tt-error) 12%, transparent)",
+        "--color-background-green": "color-mix(in srgb, var(--tt-c2) 12%, transparent)",
+        "--color-background-orange": "color-mix(in srgb, var(--tt-c1) 12%, transparent)",
+        "--color-background-yellow": "color-mix(in srgb, var(--tt-c1) 15%, transparent)",
+        "--color-background-purple": "color-mix(in srgb, var(--tt-c4) 8%, transparent)",
+
+        "--color-text-primary": "var(--tt-standard)",
+        "--color-text-secondary": "var(--tt-muted)",
+
+        "--color-link-normal": "var(--tt-c4)",
+        "--color-link-visited": "color-mix(in srgb, var(--tt-c4) 60%, var(--tt-muted))",
+        "--color-area-link": "var(--tt-c4)",
+
+        "--color-text-blue": "var(--tt-c4)",
+        "--color-text-red": "var(--tt-error)",
+        "--color-text-green": "var(--tt-c2)",
+        "--color-text-orange": "var(--tt-c1)",
+        "--color-text-purple": "color-mix(in srgb, var(--tt-c4) 80%, var(--tt-muted))",
+        "--color-text-yellow": "var(--tt-c1)",
+
+        "--color-area-highlight-border": "color-mix(in srgb, var(--tt-c4) 50%, transparent)",
+
+        "--color-border-primary": "var(--tt-outline)",
+        "--color-border-secondary": "var(--tt-outline-variant)",
+        "--color-border-active": "var(--tt-c4)",
+
+        "--color-scrollbar-thumb": "var(--tt-outline-variant)",
+
+        "--menu-tab-background": "color-mix(in srgb, var(--tt-c4) 12%, transparent)",
+        "--menu-tab-text": "var(--tt-c4)"
+      }
+    }
+  ]
+}

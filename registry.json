@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-16T12:00:00Z",
+  "updated": "2026-06-16T14:00:00Z",
   "sites": [
     {
       "id": "chatgpt",
@@ -43,6 +43,12 @@
       "name": "Wikipedia",
       "matches": ["*://*.wikipedia.org/*"],
       "path": "sites/wikipedia.json"
+    },
+    {
+      "id": "mdn",
+      "name": "MDN Web Docs",
+      "matches": ["*://developer.mozilla.org/*"],
+      "path": "sites/mdn.json"
     }
   ]
 }

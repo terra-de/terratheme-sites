@@ -4,7 +4,7 @@
   "api": {
     "type": "ddg",
     "set": {
-      "k7": "var(--tt-bottom)",
+      "k7": "var(--tt-low)",
       "kj": "var(--tt-low)",
       "k9": "var(--tt-standard)",
       "k8": "var(--tt-muted)",

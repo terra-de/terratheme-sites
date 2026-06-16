@@ -19,7 +19,7 @@
         "--surface-primary": "var(--tt-low)",
         "--surface-secondary": "var(--tt-base)",
         "--surface-tertiary": "var(--tt-high)",
-        "--canvas-background": "var(--tt-bottom)",
+        "--canvas-background": "var(--tt-low)",
         "--thread-background": "var(--tt-low)",
         "--bg-primary": "var(--tt-base)",
         "--bg-primary-hover": "var(--tt-low)",

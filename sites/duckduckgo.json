@@ -11,7 +11,7 @@
       "k9": "var(--tt-standard)",
       "k8": "var(--tt-muted)",
       "kx": "var(--tt-c4)",
-      "kaa": "var(--tt-standard)",
+      "kaa": "var(--tt-muted)",
       "k21": "color-mix(in srgb, var(--tt-standard) 8%, transparent)"
     }
   }
